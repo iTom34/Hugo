@@ -12,4 +12,4 @@ RUN cp hugo /usr/local/bin
 WORKDIR /src
 
 # Set the entrypoint
-ENTRYPOINT ["hugo", "server", "--bind", "-1.0.0.0", "-D"]
+ENTRYPOINT ["hugo", "server", "--bind", "0.0.0.0", "-p", "1313", "-D"]
